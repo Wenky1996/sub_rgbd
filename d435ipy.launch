@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="sub_rgbd" type="sub_rgbd.py" name="listener"/>
+    <remap from="/camera/aligned_depth_to_color/image_raw" to="image_depth"/>
+    <remap from="/camera/color/image_raw" to="image_rgb"/>
+</launch>
